@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PESQUISA DO IBGE</title>
+</head>
+<body>
+    <form method="post">
+        <label for="IDnome">Nome:</label>
+        <input type="text" name="Nome" id="IDnome" placeholder="Insira seu nome" required> <!--required: obrigatorio responder-->
+<br>
+        <label for="IDidade">Idade:</label>
+        <input type="number" name="idade" id="IDidade" placeholder="Digite a sua idade">
+<br>
+        <label for="IDcpf">CPF:</label>
+        <input type="text" name="CPF" id="IDcpf" placeholder="Digite o seu CPF">
+<br>
+        <label for="IDnascimento">Data de nascimento:</label>
+        <input type="date" name="DataDeNascimento" id="IDnascimento" placeholder="Digite a data do seu nascimento">
+<br>
+        <label for="IDemail">Email: </label>
+        <input type="email" name="Email" id="IDemail" placeholder="Digite o seu email">
+        <br>
+        <label for="curso">Escolha seu curso</label>
+        <select name="curso" id="curso">
+            <option selected disabled> Selecione</option>
+            <option value="info"> informática</option>
+            <option value="qui"> quimica</option>
+            <option value="adm"> administração</option>
+            <option value="mab"> meio ambiente</option>
+        </select>
+<br>
+        <label>Informe a turno do seu curso: </label>
+        <input type="radio" name="Turno" value="manha">Manhã
+        <input type="radio" name="Turno" value="tarde">Tarde
+
+<br>
+        <label> Como você vem para a escola:</label>
+        <input type="checkbox" name="publico" value="publico">Publico
+        <input type="checkbox" name="privado" value="privado">Privado
+<br>
+        <!-- Forma 1-->
+        <button name="cdastrar">Cadastrar</button>
+        <!-- Forma 2-->
+        <input type="submit" name="button" value="reset">
+
+    </form>
+
+</body>
+</html>
